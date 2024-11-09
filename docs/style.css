@@ -6,7 +6,7 @@
 body { 
     z-index: 1;
     height: 4000px;
-    background-color: black;
+    background-color: rgb(26, 26, 26);
 }
 a { 
     text-decoration: none;
@@ -30,10 +30,10 @@ a {
 } */
 /* header */
 #header-container {
-    margin-top: 0.8vw;
-    margin-bottom: 0.8vw;
+    margin-top: 1.5vh;
+    margin-bottom: 1.5vh;
     width: 80vw;
-    height: 4vw;
+    height: 7vh;
 }
 #header-setting-container {
     display: flex;
@@ -41,77 +41,71 @@ a {
     align-items: center;
     height: 100%;
     width: 100%;
-    background-color: rgb(26, 26, 26);
-    position: relative;
-    z-index: 1;
-    border-radius: 2vw;
+    background-color: black;
+    border-radius: 4vh;
 }
 #header-setting-container span {
     margin-left: 0;
     margin-right: 0;
+    padding: 0.5vh 1.5vw;
+    background-color: rgb(26, 26, 26);
+    border-radius: 4vh;
 }
 #header-setting-container #logo {
     margin-right: auto;
     margin-left: 1.5vw;
-    font-size: 1.5vw;
-    background: none;
+    font-size: 2.5vh;
 }
 #header-setting-container .set {
-    margin-left: 1.5vw;
-    margin-right: 3vw;
-    font-size: 1.2vw;
-}
-#header-setting-container a {
-    background-color: rgb(26, 26, 26);
+    margin-left: 0vw;
+    margin-right: 1.5vw;
+    font-size: 2vh;
 }
 /* main page*/
 #main-photo {
     width: 95vw;
-    height: 51vw;
+    height: 90vh;
     background-image: url(../paintavto/photo/background.jpg);
     background-size: 100% 100%;
     background-repeat: no-repeat;
-    z-index: 1;
     border-radius: 1vw;
+    display: flex;
+    align-items: flex-end;
 }
 #main-photo span { 
-    position: relative;
-    top: 65%;
-    left: 2vw;
+    margin: 0;
     background: none;
     width: 40vw;
     height: auto;
     display: flex;
     justify-content: flex-start;
     flex-direction: column;
-    margin: 0 0;
 }
 h1 , h3 { 
     background: none;
     width: 100%;
-    font-size: 2vw;
+    font-size: 3.5vh;
+    margin-left: 2vw;
 }
 h1 { 
     font-size: 4vw;
 }
 #main-photo div { 
     display: flex;
-    position: relative;
-    left: -2vw;
-    top: 1.6vw;
-    background-color: black;
+    background-color: rgb(26, 26, 26);
     border-radius: 0 1vw 0 1vw;
     width: auto;
     height: auto;
-    padding: 1vw 0;
+    padding: 2vh 0;
+    margin-top: 2vh;
     margin-left: 0;
     margin-right: 0;
 }
 #main-photo div a { 
-    background-color: rgb(26, 26, 26);
-    padding: 0.8vw 6vw;
+    background-color: black;
+    padding: 1.5vh 6vw;
     border-radius: 7.5vw;
-    font-size: 1.5vw;
+    font-size: 2.5vh;
 }
 
 /* main advantages */
@@ -122,21 +116,21 @@ h1 {
     height: auto;
 }
 #main-container h2 {
-    padding: 1vw 1vw;
-    background-color: rgb(26, 26, 26);
+    padding: 2vh 1vw;
+    background-color: black;
     border-radius: 2vw;
-    font-size: 2vw;
-    margin-bottom: 3vw;
-    margin-top: 6vw;
+    font-size: 3.5vh;
+    margin-bottom: 5.5vh;
+    margin-top: 11vh;
 }
 #main-container a { 
     position: relative;
-    bottom: 4vw;
+    bottom: 7vh;
 }
 #advantages { 
     display: flex;
     width: 100%;
-    height: 28vw;
+    height: auto;
     flex-wrap: wrap;
 }
 #advantages span {
@@ -144,47 +138,48 @@ h1 {
     flex-wrap: wrap;
     height: auto;
     width: 23vw;
-    border-radius: 1vw;
-    border: 1px solid;
+    height: 50vh;
+    border-radius: 1.5vw;
+    background-color: black;
 }
 #advantages span h4 { 
-    font-size: 1.7vw;
+    font-size: 3vh;
     margin-bottom: 0;
-    margin-left: 1vw;
     margin-top: 0;
+    margin-left: 1vw;
     width: 100%;
     height: auto;
 }
 #advantages span p { 
-    font-size: 1.4vw;
+    font-size: 2.5vh;
     margin-left: 1vw;
-    width: 100%;
+    width: 90%;
     height: auto;
 }
 #advantages img { 
-    height: 15vw;
+    height: 27vh;
     width: 19vw;
-    border-radius: 1vw;
+    border-radius: 1.5vw;
     display: block;
 }
 .under h4 { 
-    padding-top: 1.5vw;
-    border-radius: 1vw;
+    padding-top: 2.5vh;
+    border-radius: 1.5vw;
 }
 .under p {
-    margin-top: 1vw;
-    margin-bottom: 1.5vw;
+    margin-top: 2vh;
+    margin-bottom: 3vh;
 }
 .under img { 
-    margin-bottom: 1.5vw;
+    margin-bottom: 3vh;
 } 
 .top img { 
-    margin-bottom: 1.5vw;
-    margin-top: 1.5vw;
+    margin-bottom: 3vh;
+    margin-top: 3vh;
 }
 .top p {
-    margin-top: 1vw;
-    margin-bottom: 1.5vw;
+    margin-top: 2vh;
+    margin-bottom: 3vh;
 }
 
 /* main services */
@@ -200,28 +195,27 @@ h1 {
     display: inline;
     width: 32%;
     height: auto;
-    border: 1px solid;
     border-radius: 1vw;
-    background-color: rgb(26, 26, 26);
-    margin-bottom: 1vw;
+    background-color: black;
+    margin-bottom: 2vh;
 }
 .container-services h6 {
-    font-size: 1.5vw;
-    padding-top: 1vw;
-    padding-bottom: 1vw;
+    font-size: 2.5vh;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
     border-radius: 1vw;
     text-align: center;
 }
 .container-services div {
     width: 90%;
-    height: 12vw;
+    height: 20vh;
     padding: auto;
-    margin-bottom: 1vw;
+    margin-bottom: 2vh;
     display: flex;
     flex-flow: column wrap;
 }
 .container-services div img { 
-    height: 12vw;
+    height: 20vh;
     width: 50%;
     margin: 0;
     border-radius: 1vw;
@@ -229,7 +223,7 @@ h1 {
 .container-services div span { 
     display: block;
     width: auto;
-    font-size: 1.3vw;
+    font-size: 2.5vh;
     align-self: flex-start;
     margin: 0;
     margin-right: 2vw;
@@ -237,17 +231,17 @@ h1 {
 .container-services div p { 
     display: block;
     width: auto;
-    font-size: 1.3vw;
+    font-size: 2.5vh;
     align-self: flex-start;
     margin: 0;
     margin-right: 2vw;
     margin-top: auto;
-    margin-bottom: 1vw;
+    margin-bottom: 2vh;
 }
 .container-services div button { 
     display: block;
-    font-size: 1.2vw;
-    padding: 0.5vw 1vw;
+    font-size: 2vh;
+    padding: 1vh 1vw;
     border-radius: 1vw;
     align-self: flex-end;
     margin: 0;
@@ -263,31 +257,9 @@ h1 {
     height: auto;
 }
 iframe { 
-    width: 70%;
-    height: 40vw;
+    width: 60%;
+    height: 75vh;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 footer { 
@@ -314,6 +286,7 @@ footer div span {
 
 
 .anketa { 
-    width: 100%;
+    width: 10%;
     height: 18vw;
+    visibility: hidden;
 }
