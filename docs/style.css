@@ -5,7 +5,6 @@
 }
 body { 
     z-index: 1;
-    height: 4000px;
     background-color: #30333A;
     min-width: 320px;
     font-family: "REM", sans-serif;
@@ -69,7 +68,7 @@ a {
 #main-photo span { 
     margin: 0;
     background: none;
-    width: 55vmax;
+    width: auto;
     height: auto;
     display: flex;
     justify-content: flex-start;
@@ -100,6 +99,8 @@ h1 {
     background-color: #72676F;
     padding: 1.5vmax 6vmin;
     border-radius: 7.5vw;
+    height: 3vh;
+    width: auto;
     font-size: 3vh;
 }
 
@@ -130,56 +131,49 @@ h1 {
     flex-wrap: wrap;
 }
 #advantages span {
-    display: flex;
-    flex-wrap: wrap;
     height: auto;
-    width: 23vmax;
-    height: 35vmax;
-    border-radius: 1.5vmax;
+    width: 24%;
+    height: auto;
+    border-radius: 2vmax;
     background-color: #9A8D96;
     opacity: 0.7;
+    margin-top: 0;
+    margin-bottom: 2vmax;
+}
+#advantages span div { 
+    width: 91%;
+    height: auto;
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2vmax;
+    margin-bottom: 2vmax;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
 }
 #advantages span h4 { 
     font-size: 2vmax;
-    margin-bottom: 0;
-    margin-top: 0;
-    margin-left: 1vmax;
-    width: 100%;
-    height: auto;
+    margin: 0;
+    margin: 0.5vmax 0;
+    max-width: 100%;
 }
 #advantages span p { 
-    font-size: 1.7vmax;
-    margin-left: 1vmax;
-    width: 90%;
-    height: auto;
+    font-size: 1.6vmax;
+    margin: 0.5vmax 0;
 }
 #advantages img { 
-    height: 25vmin;
-    width: 19vmax;
-    border-radius: 1.5vw;
-    display: block;
+    height: 20vmin;
+    max-height: 40%;
+    width: 90%;
+    border-radius: 2vmax;
     object-fit: cover;
+    margin-left: auto;
+    margin-right: auto;
+    margin: auto auto;
+    margin-top: 0.5vmax;
+    margin-bottom: 0.5vmax;
 }
-.under h4 { 
-    padding-top: 2vmax;
-    border-radius: 1.5vw;
-}
-.under p {
-    margin-top: 0vmax;
-    margin-bottom: auto;
-}
-.under img { 
-    margin-bottom: 2vmax;
-} 
-.top img { 
-    margin-bottom: 1vmax;
-    margin-top: 2vmax;
-}
-.top p {
-    margin-top: 0;
-    margin-bottom: 4vmax;
-}
-
 /* main services */
 
 #services { 
@@ -476,30 +470,57 @@ footer div #container-under-footer span {
 
 
 
-
-@media screen and (max-width: 1350px) {
-    #advantages span {
-        width: 45vw;
-        margin-bottom: 1vmax;
+@media screen and (max-width: 1300px) {
+    #advantages span div { 
+        height: auto;
     }
-    #advantages img { 
-        width: 35vw;
+}
+@media screen and (max-width: 1050px) {
+    #advantages span { 
+        width: 48%;
+        margin-bottom: 2vmax;
+    }
+    #advantages span div { 
+        width: 88%;
+        height: auto;
+    }
+    #advantages span h4 { 
+        font-size: 3vmax;
+        margin: 0.5vmax 0;
     }
     #advantages span p { 
-        margin-top: 1vmax;
-        margin-left: 5vw;
-        width: 80%;
+        font-size: 2vmax;
+        margin: 0.5vmax 0;
     }
-    #advantages span h4 {
-        margin-left: 5vw;
-        margin-top: 0.7vmax;
+    #advantages span img { 
+        height: 24vmin;
+        margin-top: 0.5vmax;
+        margin-bottom: 0.5vmax;
     }
-    .container-anketa textarea { 
-        width: 98%;
+}
+@media screen and (max-width: 440px) {
+    #advantages span { 
+        width: 100%;
+        margin-bottom: 2vmax;
     }
-    .container-anketa button { 
-        width: 30%;
-        margin-top: 2vmax;
+    #advantages span div { 
+        width: 88%;
+        height: auto;
+    }
+    #advantages span h4 { 
+        font-size: 2.5vmax;
+        margin: 0.5vmax 0;
+    }
+    #advantages span p { 
+        font-size: 2vmax;
+        margin: 0.5vmax 0;
+        margin-bottom: 1vmax;
+    }
+    #advantages span img { 
+        height: 40vmin;
+        width: 90%;
+        margin-top: 0.5vmax;
+        margin-bottom: 0.5vmax;
     }
 }
 @media screen and (max-width:800px) {
@@ -512,7 +533,7 @@ footer div #container-under-footer span {
         margin-top: 1vmax;
     }
 }
-@media screen and (max-width:750px) {
+@media screen and (max-width:790px) {
     .container-services { 
         width: 45vw;
     }
@@ -550,7 +571,7 @@ footer div #container-under-footer span {
     }
 
 }
-@media screen and (max-width:500px) {
+@media screen and (max-width:510px) {
     .container-services {
         height: 26vmax;
         width: 49%;
@@ -586,7 +607,17 @@ footer div #container-under-footer span {
         font-size: 2.5vh;
     }
 }
-@media screen and (max-width:400px) {
+@media screen and (max-width:560px) {
+    #main-photo div a { 
+        font-size: 2.5vh;
+    }
+}
+@media screen and (max-width:470px) {
+    #main-photo div a { 
+        font-size: 2.2vh;
+    }
+}
+@media screen and (max-width:420px) {
     #main-photo div a { 
         font-size: 1.8vh;
     }
@@ -633,5 +664,14 @@ footer div #container-under-footer span {
     }
     .container-anketa textarea { 
         padding-left: 2vmax;
+    }
+}
+@media screen and (max-width: 1320px) { 
+    .container-anketa textarea {
+        width: 100%;
+        margin-bottom: 1vmax;
+    }
+    .container-anketa button {
+        width: auto;
     }
 }
